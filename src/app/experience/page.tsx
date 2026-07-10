@@ -14,7 +14,9 @@ export default function ExperiencePage() {
   return (
     <PageContainer>
       <SectionHeading title={language === "en" ? "Internship / Professional Experience" : "实习与专业经历"}>
-        {language === "en" ? "Editable professional entries focused on robotics, embedded systems, deployment, testing, and documentation." : "可编辑的专业经历，聚焦机器人、嵌入式系统、部署、测试与文档。"}
+        {language === "en"
+          ? "Professional entries focused on robot delivery, on-site deployment, calibration, validation, operations handoff, and documentation."
+          : "聚焦机器人实施交付、现场部署、传感器标定、功能验证、运维交接与技术文档的专业经历。"}
       </SectionHeading>
       <div className="grid gap-6">
         {experiences.map((experience) => (
